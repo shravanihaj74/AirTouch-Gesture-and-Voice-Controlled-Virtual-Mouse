@@ -1,0 +1,48 @@
+# Air Touch Virtual Mouse — Python Dependencies
+# Install with: pip install -r requirements.txt
+
+# Core computer vision
+opencv-python>=4.8.0
+mediapipe>=0.10.0
+numpy>=1.24.0
+
+# Mouse/keyboard control
+pyautogui>=0.9.54
+pynput>=1.7.6
+
+# Voice recognition
+SpeechRecognition>=3.10.0
+pyaudio>=0.2.13           # Microphone access (see note below)
+
+# System utilities
+Pillow>=10.0.0            # Screenshots
+psutil>=5.9.0             # System info for dashboard
+matplotlib>=3.7.0         # Performance dashboard
+
+# Optional — Windows volume control
+# pycaw>=20181226         # Uncomment on Windows
+
+# Optional — Cross-platform brightness control
+# screen_brightness_control>=0.23.0  # Uncomment for Windows/Linux brightness
+
+# Optional — Offline voice recognition (no internet required)
+# vosk>=0.3.45            # Uncomment for offline mode
+# Download model: https://alphacephei.com/vosk/models (vosk-model-small-en-us)
+
+# ─────────────────────────────────────────────
+# INSTALLATION NOTES
+# ─────────────────────────────────────────────
+#
+# macOS:
+#   brew install portaudio
+#   pip install pyaudio
+#
+# Ubuntu/Debian:
+#   sudo apt-get install python3-pyaudio portaudio19-dev
+#
+# Windows:
+#   pip install pipwin
+#   pipwin install pyaudio
+#
+# If MediaPipe install fails:
+#   pip install mediapipe --extra-index-url https://pypi.org/simple/
